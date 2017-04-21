@@ -1,0 +1,33 @@
+{
+  "name": "projects",
+  "description": "web portfolio",
+  "author": "yerkopalma",
+  "version": "0.1.0",
+  "main": "index.js",
+  "private": true,
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "standard --verbose | snazzy",
+    "start": "budo index.js:bundle.js --open --verbose --pushstate --host 0.0.0.0 --port 8080 --",
+    "build": "NODE_ENV=production browserify -e index.js -o bundle.js -t sheetify/transform -g uglifyify | uglifyjs"
+  },
+  "repository": "yerkopalma/projects",
+  "license": "MIT",
+  "keywords": [
+    "web",
+    "portfolio"
+  ],
+  "dependencies": {
+    "bel": "^4.6.0",
+    "singleton-router": "^1.3.0"
+  },
+  "devDependencies": {
+    "budo": "^9.4.7",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2",
+    "uglifyify": "^3.0.4",
+    "uglifyjs": "^2.4.10"
+  }
+}
