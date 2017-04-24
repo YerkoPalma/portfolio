@@ -10,8 +10,8 @@
   ],
   "scripts": {
     "test": "standard --verbose | snazzy",
-    "start": "budo index.js:bundle.js --open --verbose --pushstate --host 0.0.0.0 --port 8080 --",
-    "build": "NODE_ENV=production browserify -e index.js -o bundle.js -t sheetify/transform -g uglifyify | uglifyjs"
+    "start": "bankai index.js -A 0.0.0.0 -p 8080 -a . --open",
+    "build": "NODE_ENV=production bankai build --optimize dist/"
   },
   "repository": "yerkopalma/projects",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "singleton-router": "^1.3.0"
   },
   "devDependencies": {
-    "budo": "^9.4.7",
+    "bankai": "^7.5.0",
     "snazzy": "^7.0.0",
     "standard": "^10.0.2",
     "uglifyify": "^3.0.4",
