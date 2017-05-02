@@ -4,7 +4,7 @@ var html = require('bel')
 
 css('tachyons')
 
-var router = Router()
+var router = Router({ onRender: onRender })
 
 router.addRoute('/', mainView)
 router.addRoute('/:project', projectView)
@@ -15,6 +15,7 @@ router.start()
 var container = css`
   :host {
     height: 97vh;
+    transition: all 0.5s;
   }
 `
 var bgColors = [
@@ -83,4 +84,17 @@ function notFoundView (params, state) {
   return html`<main>
     <h1>ups! nothing here :(</h1>
   </main>`
+}
+
+function onRender (currentView, previousView) {
+  // make dissappear the previousView
+  if (previousView && previousView.classList) previousView.classList.add('o-0')
+  previousView.addEventListener('transitionend', function (e) {
+    if (currentView && currentView.classList) currentView.classList.add('o-0')
+    e.stopPropagation()
+    // replace it with the currentView
+    router.rootEl.replaceChild(currentView, previousView)
+    // make it appear
+    if (currentView && currentView.classList) currentView.classList.remove('o-0')
+  })
 }
