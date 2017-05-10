@@ -1,6 +1,5 @@
 var Router = require('singleton-router')
 var css = require('sheetify')
-var html = require('bel')
 
 css('tachyons')
 
