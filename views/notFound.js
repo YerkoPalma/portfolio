@@ -1,5 +1,6 @@
 var html = require('bel')
 var css = require('sheetify')
+
 var container = css`
   :host {
     height: 97vh;
@@ -7,7 +8,7 @@ var container = css`
   }
 `
 
-function notFoundView (params, state) {
+function notFoundView (params, store) {
   return html`<main class="w-100 pa2 bg-black min-vh-100">
     <div class="pa7 bg-white w-100 h-100 overflow-y-scroll ${container}">
       <h1 class=" dib f-headline ma0 lh-title black tc w-100">

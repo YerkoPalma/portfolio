@@ -12,17 +12,6 @@ var bgColors = [
   'light-green'
 ]
 
-var projects = [
-  {title: 'senadores', description: 'Datos públicos disponibles en la página www.senado.cl'},
-  {title: 'Salvador', description: 'Pequeño sitio web que mantengo para mi hijo'},
-  {title: 'Matrimonio', description: 'Parte de matrimonio interactivo (PWA)'},
-  {title: 'singleton-router', description: 'Router fron end a la medida'},
-  {title: 'Palma contabilidad', description: 'Contador independiente'},
-  {},
-  {},
-  {}
-]
-
 var container = css`
   :host {
     height: 97vh;
@@ -50,7 +39,7 @@ var renderProjects = function (projects) {
   })
 }
 
-function mainView (params, state) {
+function mainView (params, projects) {
   return html`
   <main class="w-100 pa2 bg-black min-vh-100">
     <div class="pa3 bg-white w-100 h-100 overflow-y-scroll ${container}">

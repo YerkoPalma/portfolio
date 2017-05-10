@@ -3,11 +3,23 @@ var css = require('sheetify')
 
 css('tachyons')
 
+var projects = [
+  {title: 'senadores', description: 'Datos públicos disponibles en la página www.senado.cl'},
+  {title: 'Salvador', description: 'Pequeño sitio web que mantengo para mi hijo'},
+  {title: 'Matrimonio', description: 'Parte de matrimonio interactivo (PWA)'},
+  {title: 'singleton-router', description: 'Router fron end a la medida'},
+  {title: 'Palma contabilidad', description: 'Contador independiente'},
+  {},
+  {},
+  {}
+]
+
 var router = Router({ onRender: onRender })
 
 router.addRoute('/', require('./views/main'))
 router.addRoute('/:project', require('./views/projects'))
 router.notFound(require('./views/notFound'))
+router.setStore(projects) // hacking
 router.setRoot('/')
 router.start()
 

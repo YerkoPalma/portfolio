@@ -1,17 +1,6 @@
 var html = require('bel')
 var css = require('sheetify')
 
-var projects = [
-  {title: 'senadores', description: 'Datos públicos disponibles en la página www.senado.cl'},
-  {title: 'Salvador', description: 'Pequeño sitio web que mantengo para mi hijo'},
-  {title: 'Matrimonio', description: 'Parte de matrimonio interactivo (PWA)'},
-  {title: 'singleton-router', description: 'Router fron end a la medida'},
-  {title: 'Palma contabilidad', description: 'Contador independiente'},
-  {},
-  {},
-  {}
-]
-
 var container = css`
   :host {
     height: 97vh;
@@ -19,7 +8,7 @@ var container = css`
   }
 `
 
-function projectView (params, store) {
+function projectView (params, projects) {
   var project = projects[params.project]
   if (!project) return require('./notFound')()
   return html`<main class="w-100 pa2 bg-black min-vh-100">
