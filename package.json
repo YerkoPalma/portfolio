@@ -22,11 +22,12 @@
   "dependencies": {
     "bel": "^4.6.0",
     "sheetify": "^6.0.2",
-    "singleton-router": "^1.4.1",
+    "singleton-router": "^1.4.2",
     "tachyons": "^4.7.1"
   },
   "devDependencies": {
     "bankai": "^7.5.0",
+    "browserify-markdown": "^2.0.1",
     "snazzy": "^7.0.0",
     "standard": "^10.0.2",
     "uglifyify": "^3.0.4",
