@@ -4,11 +4,11 @@ var css = require('sheetify')
 css('tachyons')
 
 var projects = [
-  {title: 'senadores', description: 'Datos públicos disponibles en la página www.senado.cl'},
-  {title: 'Salvador', description: 'Pequeño sitio web que mantengo para mi hijo'},
-  {title: 'Matrimonio', description: 'Parte de matrimonio interactivo (PWA)'},
-  {title: 'singleton-router', description: 'Router fron end a la medida'},
-  {title: 'Palma contabilidad', description: 'Contador independiente'},
+  {title: 'senadores', description: 'Datos públicos disponibles en la página www.senado.cl', github: 'https://github.com/senadores-chile'},
+  {title: 'Salvador', description: 'Pequeño sitio web que mantengo para mi hijo', github: 'https://github.com/YerkoPalma/salvador', site: 'http://salvador.palmanavea.com/'},
+  {title: 'Matrimonio', description: 'Parte de matrimonio interactivo (PWA)', site: 'https://matrimonio.palmanavea.com'},
+  {title: 'singleton-router', description: 'Router front end a la medida', github: 'https://github.com/YerkoPalma/singleton-router'},
+  {title: 'Palma contabilidad', description: 'Contador independiente', site: 'http://palmacontabilidad.cl/'},
   {},
   {},
   {}
