@@ -40,7 +40,7 @@ function projectView (params, projects) {
           <path d="M10 6 L2 16 10 26 M2 16 L30 16" />
         </svg>
       </a>
-      <h1 class="f1 dip absolute top-0 left-2 mh5">${project.title} ${siteLink(project.site)}</h1>
+      <h1 class="f1 w-75 dip absolute top-0 left-2-l left--2 mh5 mt6 mt4-l bg-white">${project.title} ${siteLink(project.site)}</h1>
       ${octolink(project.github)}
     </div>
   </main>`
