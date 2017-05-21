@@ -27,7 +27,13 @@ Junto con los partes fisicos, desarrollé una [aplicación web progresiva][pwa] 
 
 ### senadores
 
+El año 2017 hay elecciones parlamentarias en Chile y yo siempre he considerado que la información disponible respecto a los candidatos es poca. No sobre los candidatos presidenciales, sino los candidatos a diputados y senadores.
+Gracias a la ley de transparencia, hoy esa información esta disponible para quien la solicite, sin embargo, se encuentra en un formato poco amigable y sin un formato accesible para programadores. Es por esto, que decidí juntar en un solo sitio la información del senado y servel y crear una API amigable para programadores con la informacion publica de senadores.
+
 ### singleton-router
+
+Como desarrollador javascript, siempre estoy buscando un buen set de herramientas de desarrollo para mis trabajos. Nunca me gustaron mucho las herramientas "de moda" (angular en su momento y react ahora) y he pasado una transición que partió con jquery, luego [vue][vue] y finalmente [choo][choo].
+Este último framework es el que más se acerca a mis expectativas, si no fuese por un solo detalle, el router. Como el [sheet-router][sheet-router], y luego [nanorouter][nanorouter], no cumplian mis expectativas, cree mi propio router y mi propio stack de desarrollo, que se ajusta perfecto a mis expectativas.
 
 ## License
 [MIT](/license)
@@ -50,3 +56,5 @@ Junto con los partes fisicos, desarrollé una [aplicación web progresiva][pwa] 
 [mapbox-directions]: https://www.mapbox.com/mapbox.js/example/v1.0.0/mapbox-directions/
 [scoped-plugin]: https://www.npmjs.com/package/@yerkopalma/mapbox-directions.js
 [tachyons]: http://tachyons.io/
+[sheet-router]: https://github.com/yoshuawuyts/sheet-router
+[nanorouter]: https://github.com/yoshuawuyts/nanorouter
